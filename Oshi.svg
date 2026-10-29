@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- oshi icon: an abstract floating mark, nothing terminal about it -->
+  <rect width="128" height="128" rx="30" fill="#17191d"/>
+  <rect x="0.5" y="0.5" width="127" height="127" rx="29.5"
+        fill="none" stroke="#2a2e35" stroke-width="1"/>
+
+  <!-- drop shadow (soft, behind the centered mark) -->
+  <rect x="36" y="36" width="60" height="60" rx="16" fill="#2a2e35"/>
+  <!-- the mark itself: one calm accent, dead center -->
+  <rect x="34" y="34" width="60" height="60" rx="16" fill="#66b2b2"/>
+</svg>
