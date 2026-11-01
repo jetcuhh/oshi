@@ -4337,7 +4337,7 @@ static void brDraw(const char *msg, const char *plabel, const char *pbuf) {
       char label[NAME_MAX + 3];
       const char *suffix = strcmp(e->name, "..") == 0 ? ""
                          : e->isdir ? "/" : e->islink ? "@" : "";
-      brColor(&ab, e->isdir ? COL_GUTTER_CURSOR_FG : COL_TEXT_FG);
+      brColor(&ab, e->isdir || idx == br_sel ? COL_GUTTER_CURSOR_FG : COL_TEXT_FG);
       if (idx == br_sel) abAppend(&ab, "\x1b[7m", 4);
       abAppend(&ab, " ", 1);
       snprintf(label, sizeof(label), "%s%s", e->name, suffix);
